@@ -1,0 +1,67 @@
+<!-- 通讯录表格 -->
+
+<!--
+
+2. 通讯录列表页面：一个通讯录表格，有添加、编辑、删除按钮
+3. 添加新的联系人页面：姓名、电话、邮箱、住址、QQ号等
+4. 在添加联系人时完成输入值的校验（如校验邮箱格式是否合法等），不符合校验条件时给予提示信息
+5. 使用git进行代码管理，提交作业时提供项目的git地址即可
+
+-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>通讯录</title>
+    <link rel="stylesheet" href="../static/css/addressBook.css"   th:href="@{/css/addressBook.css}">
+    <script src="addressBook.js"></script>
+    <script>
+        function add()
+        {
+        // alert("Hello world!");
+        window.location.href="/add";
+        }
+        function del()
+        {
+            alert("删除成功！");
+        }
+    </script>
+</head>
+
+<body>
+
+    <div >
+    <button class="button button1"  onclick="add()" > 添加</button>
+    <button class="button button2" >编辑</button>
+    <button class="button button3" onclick="del()">删除</button>
+    </div>
+    <br>
+    <br>
+    <div  class="main" >
+        <table id="addressBook" >
+            <caption>addressBook</caption>
+            <tr>
+                <th>Name</th>
+                <th>Telephone</th>
+                <th>E-Mail</th>
+                <th>Address</th>
+                <th>QQ</th>
+            </tr>
+            <tr>
+                <td>suggie</td>
+                <td>18201507866</td>
+                <td>929946014@qq.com</td>
+                <td>北京邮电大学 学生公寓13号楼</td>
+                <td>929946014</td>
+            </tr>
+            <tr class="alt">
+                <td>易烊千玺</td>
+                <td>520520520</td>
+                <td>555555555@qq.com</td>
+                <td>北京邮电大学 学生公寓13号楼</td>
+                <td>123456789</td>
+            </tr>
+        </table>
+    </div>
+</body>

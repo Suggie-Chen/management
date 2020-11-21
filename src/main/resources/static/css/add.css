@@ -1,0 +1,75 @@
+body
+{
+    background-image:url('../images/background.jpg');
+}
+
+
+bkg
+{
+    background-color: rgba(255,255,255,0.3);
+    top: 50%; left: 50%;
+    width: 500px;
+    height: 100px;
+}
+form
+{
+    background-color: rgba(255,255,255,0.3);
+    /* display: flex; justify-content: center; align-items: center; */
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    /* 	text-align:center; */
+    font-size: 2em;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+input[type=text  ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+input[type=tel  ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+input[type=email  ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+input[type=text  ]:focus {
+    background-color: lightblue;
+}
+input[type=tel  ]:focus {
+    background-color: lightblue;
+}
+input[type=email  ]:focus {
+    background-color: lightblue;
+}
+input[type=submit]{
+
+    width: 50px;
+    height: 20px;
+    left:50%;
+}
+/*.inputSubmit {*/
+/*    border: 1px solid #CDC28D; !* 输入框表框颜色*!*/
+/*    background-color: #F2F9FD; !* 输入框背景颜色*!*/
+/*    height: 24px; !*输入框高度*!*/
+/*    width: 200px; !*输入框宽度*!*/
+/*    padding-top: 4px; !*输入框里的文字和输入框上边之间的距离（因为输入框比较高，输入的字不是居中的，所以设定此样式）*!*/
+/*    font-family: Arial, Helvetica, sans-serif; !*输入框文字类型*!*/
+/*    font-size: 12px; !*输入框内文字大小*!*/
+/*    padding-left: 10px; !*输入框里的文字和输入框左边之间的距离*!*/
+/*}*/
